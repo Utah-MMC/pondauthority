@@ -1,0 +1,14 @@
+{
+  "name": "pondauthority",
+  "version": "1.0.0",
+  "description": "Pond Authority website - mirrored from nationalpondservice.com",
+  "scripts": {
+    "mirror": "node mirror-site.js",
+    "replace-branding": "node replace-branding.js"
+  },
+  "dependencies": {
+    "playwright": "^1.57.0",
+    "website-scraper": "^5.0.0",
+    "website-scraper-puppeteer": "^1.1.0"
+  }
+}

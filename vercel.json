@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "public": false,
+  "builds": [
+    {
+      "src": "nationalpondservice.com/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/nationalpondservice.com/$1"
+    }
+  ]
+}
+
