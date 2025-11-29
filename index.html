@@ -72,6 +72,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="images/logo/android-chrome-192x192.png" />
   <link rel="icon" type="image/png" sizes="512x512" href="images/logo/android-chrome-512x512.png" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/image-animations.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -79,9 +80,9 @@
       <a href="index.html" class="logo"><img src="images/logo.png" alt="Pond Authority" class="logo-img" /></a>
       <nav class="main-nav">
         <a href="pages/find-a-contractor.html">Find a Contractor</a>
-        <a href="pages/cities/index.html">Cities</a>
         <a href="pages/services.html">Services</a>
-        <a href="pages/how-it-works.html">How It Works</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/cities/index.html">Cities</a>
         <a href="pages/for-contractors.html">For Contractors</a>
         <a href="pages/contact.html" class="btn btn-primary">Get Help</a>
       </nav>
@@ -89,7 +90,7 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero hero-with-bg">
     <div class="container hero-inner">
       <div class="hero-content">
         <h1>Find Trusted Pond & Water-Feature Contractors Near You</h1>
@@ -134,7 +135,7 @@
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="how-it-works">
+  <section class="how-it-works section-with-bg">
     <div class="container">
       <h2>How It Works</h2>
       <div class="steps-grid">
@@ -206,7 +207,7 @@
   </section>
 
   <!-- WHY US -->
-  <section class="why-us">
+  <section class="why-us section-with-bg">
     <div class="container">
       <h2>Why Homeowners Choose Pond Authority</h2>
       <div class="why-grid">
@@ -235,7 +236,7 @@
   </section>
 
   <!-- FEATURED CONTRACTORS -->
-  <section class="featured-contractors">
+  <section class="featured-contractors section-with-bg">
     <div class="container">
       <h2>Featured Pond Contractors</h2>
       <div class="contractor-grid">
@@ -268,16 +269,58 @@
   </section>
 
   <!-- IMAGE GALLERY -->
-  <section class="popular-services" style="padding: var(--spacing-xl) 0; background-color: white;">
+  <section class="image-showcase">
     <div class="container">
       <h2 style="text-align: center; margin-bottom: var(--spacing-lg);">Beautiful Ponds We Help Maintain</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-sm);">
-        <img src="images/65f25c8086c8955b83251f79c1f77da1-enhance-4x.jpeg" alt="Pond gallery" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); transition: var(--transition);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='var(--shadow-sm)';" />
-        <img src="images/735e2dfc82cdc5f4ee2cede5bd9c631f-enhance-4x.jpeg" alt="Pond gallery" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); transition: var(--transition);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='var(--shadow-sm)';" />
-        <img src="images/74fbce0371cdb09efb1c704f539bc7f6-enhance-4x.jpeg" alt="Pond gallery" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); transition: var(--transition);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='var(--shadow-sm)';" />
-        <img src="images/76858a7a39560138d598f10f201740f7-enhance-4x.jpeg" alt="Pond gallery" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); transition: var(--transition);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='var(--shadow-sm)';" />
-        <img src="images/7944d6d62f5d2d84190bdcc389014193-enhance-4x.jpeg" alt="Pond gallery" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); transition: var(--transition);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='var(--shadow-sm)';" />
-        <img src="images/915f46a740c26fb8301437faf19c7711-enhance-4x.jpeg" alt="Pond gallery" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); transition: var(--transition);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='var(--shadow-sm)';" />
+      <div class="image-showcase-grid">
+        <div class="image-showcase-item">
+          <img src="images/65f25c8086c8955b83251f79c1f77da1-enhance-4x.jpeg" alt="Professional pond with waterfall feature" />
+          <div class="overlay-text">Waterfall Features</div>
+        </div>
+        <div class="image-showcase-item">
+          <img src="images/735e2dfc82cdc5f4ee2cede5bd9c631f-enhance-4x.jpeg" alt="Crystal clear pond with natural rock border" />
+          <div class="overlay-text">Natural Rock Borders</div>
+        </div>
+        <div class="image-showcase-item">
+          <img src="images/74fbce0371cdb09efb1c704f539bc7f6-enhance-4x.jpeg" alt="Koi pond with lush landscaping" />
+          <div class="overlay-text">Koi Ponds</div>
+        </div>
+        <div class="image-showcase-item">
+          <img src="images/76858a7a39560138d598f10f201740f7-enhance-4x.jpeg" alt="Garden pond with lily pads" />
+          <div class="overlay-text">Garden Ponds</div>
+        </div>
+        <div class="image-showcase-item">
+          <img src="images/7944d6d62f5d2d84190bdcc389014193-enhance-4x.jpeg" alt="Large estate pond with fountain" />
+          <div class="overlay-text">Estate Water Features</div>
+        </div>
+        <div class="image-showcase-item">
+          <img src="images/915f46a740c26fb8301437faf19c7711-enhance-4x.jpeg" alt="Backyard pond oasis" />
+          <div class="overlay-text">Backyard Oasis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL SECTION WITH IMAGE -->
+  <section style="padding: var(--spacing-xl) 0; background: linear-gradient(135deg, var(--color-bg-section) 0%, white 100%);">
+    <div class="container">
+      <div class="content-with-image">
+        <div class="content-with-image-img">
+          <img src="images/0cc90ccee5b37dfa6aed153a01581727-enhance-4x.jpeg" alt="Beautifully maintained pond" />
+        </div>
+        <div>
+          <h2>Professional Pond Care You Can Trust</h2>
+          <p style="font-size: var(--font-size-large); margin-bottom: var(--spacing-md);">
+            "We know finding the right pond contractor can be overwhelming. That's why we've built a network of vetted professionals who truly understand water features."
+          </p>
+          <ul style="list-style: disc; padding-left: var(--spacing-md); color: var(--color-text-light); margin-bottom: var(--spacing-md);">
+            <li>Verified experience with ponds and water features</li>
+            <li>Licensed and insured professionals</li>
+            <li>Real customer reviews and ratings</li>
+            <li>Portfolio of completed projects</li>
+          </ul>
+          <a href="pages/find-a-contractor.html" class="btn btn-primary">Find a Pro Near You</a>
+        </div>
       </div>
     </div>
   </section>
@@ -296,7 +339,8 @@
       <p>&copy; 2025 Pond Authority. All rights reserved.</p>
       <nav class="footer-nav">
         <a href="pages/about.html">About</a>
-        <a href="#resources">Resources</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/services.html">Services</a>
         <a href="pages/for-contractors.html">For Contractors</a>
         <a href="pages/contact.html">Contact</a>
         <a href="sitemap.xml" style="font-size: 0.85rem; opacity: 0.7;">Sitemap</a>

@@ -30,6 +30,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="../images/logo/android-chrome-192x192.png" />
   <link rel="icon" type="image/png" sizes="512x512" href="../images/logo/android-chrome-512x512.png" />
   <link rel="stylesheet" href="../css/styles.css" />
+  <script src="../js/image-animations.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -37,9 +38,9 @@
       <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Pond Authority" class="logo-img" /></a>
       <nav class="main-nav">
         <a href="find-a-contractor.html">Find a Contractor</a>
-        <a href="cities/index.html">Cities</a>
         <a href="services.html">Services</a>
-        <a href="how-it-works.html">How It Works</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="cities/index.html">Cities</a>
         <a href="for-contractors.html">For Contractors</a>
         <a href="contact.html" class="btn btn-primary">Get Help</a>
       </nav>
@@ -47,7 +48,7 @@
   </header>
 
   <main>
-    <section class="directory-hero">
+    <section class="directory-hero" style="background-image: linear-gradient(135deg, rgba(240, 247, 255, 0.95) 0%, rgba(255, 255, 255, 0.93) 100%), url('../images/65f25c8086c8955b83251f79c1f77da1-enhance-4x.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
       <div class="container">
         <h1>Pond Services</h1>
         <p>Professional pond and water-feature services to keep your water feature beautiful and healthy.</p>
@@ -98,6 +99,49 @@
             <p>Custom water features that enhance your outdoor space. Professional design and installation of waterfalls, fountains, and decorative water elements.</p>
             <a href="find-a-contractor.html?service=design" class="btn btn-secondary" style="margin-top: var(--spacing-sm);">Find design pros near you →</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE SHOWCASE WITH IMAGES -->
+    <section style="padding: var(--spacing-xl) 0; background-color: white;">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--spacing-lg);">See What's Possible</h2>
+        
+        <div class="content-with-image" style="margin-bottom: var(--spacing-xl);">
+          <div>
+            <h3 style="font-size: var(--font-size-h2); margin-bottom: var(--spacing-sm);">Transform Your Outdoor Space</h3>
+            <p style="font-size: var(--font-size-large); margin-bottom: var(--spacing-md);">
+              From simple backyard ponds to elaborate water gardens, our network of contractors can bring your vision to life.
+            </p>
+            <ul style="list-style: disc; padding-left: var(--spacing-md); color: var(--color-text-light);">
+              <li>Custom pond design and installation</li>
+              <li>Natural stone waterfalls and streams</li>
+              <li>Professional-grade filtration systems</li>
+              <li>Fish-friendly ecosystems</li>
+            </ul>
+          </div>
+          <div class="content-with-image-img">
+            <img src="../images/1c7c15865a8fd7d198a5c69c3087e91c-enhance-4x.jpeg" alt="Custom pond installation with waterfall" />
+          </div>
+        </div>
+
+        <div class="content-with-image reverse">
+          <div>
+            <h3 style="font-size: var(--font-size-h2); margin-bottom: var(--spacing-sm);">Keep Your Pond Pristine</h3>
+            <p style="font-size: var(--font-size-large); margin-bottom: var(--spacing-md);">
+              Regular maintenance keeps your pond healthy, clear, and beautiful year-round.
+            </p>
+            <ul style="list-style: disc; padding-left: var(--spacing-md); color: var(--color-text-light);">
+              <li>Spring and fall cleanings</li>
+              <li>Algae and debris removal</li>
+              <li>Water quality testing and treatment</li>
+              <li>Equipment inspection and tune-ups</li>
+            </ul>
+          </div>
+          <div class="content-with-image-img">
+            <img src="../images/50b7c5b5336aff2aeaf6690696e3e42f-denoise-enhance-4x.jpeg" alt="Professional pond maintenance" />
+          </div>
         </div>
       </div>
     </section>
